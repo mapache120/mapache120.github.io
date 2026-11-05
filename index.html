@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Del Pueblo a la Mesa</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #1c1814;
+    color: #f1e6d3;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  header {
+    text-align: center;
+    padding: 80px 20px 50px;
+    position: relative;
+    z-index: 2;
+  }
+  header h1 {
+    font-size: 3rem;
+    color: #e0a93b;
+    letter-spacing: 2px;
+  }
+  header p {
+    margin-top: 12px;
+    font-style: italic;
+    color: #cdb892;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  h2.seccion {
+    color: #e0a93b;
+    border-bottom: 1px solid #5a4a33;
+    padding-bottom: 8px;
+    margin: 30px 0 20px;
+  }
+  .receta {
+    background: rgba(40, 33, 26, 0.92);
+    border: 1px solid #5a4a33;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 22px;
+  }
+  .receta h3 { color: #e0a93b; margin-bottom: 10px; }
+  .receta h4 { margin-top: 12px; color: #cdb892; }
+  .receta ul, .receta ol { margin-left: 22px; }
+  .nota { font-style: italic; color: #a8956f; margin-top: 10px; }
+  .comunidad {
+    text-align: center;
+    padding: 30px;
+    border: 1px dashed #5a4a33;
+    border-radius: 10px;
+    color: #cdb892;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #8a785a;
+    position: relative;
+    z-index: 2;
+  }
+  .utensilio {
+    position: fixed;
+    font-size: 2.4rem;
+    opacity: 0.18;
+    z-index: 1;
+    animation: flotar 7s ease-in-out infinite;
+    pointer-events: none;
+  }
+  .u1 { top: 12%; left: 6%; animation-delay: 0s; }
+  .u2 { top: 30%; right: 8%; animation-delay: 1.5s; }
+  .u3 { top: 55%; left: 10%; animation-delay: 3s; }
+  .u4 { top: 72%; right: 12%; animation-delay: 4.5s; }
+  .u5 { top: 88%; left: 40%; animation-delay: 2s; }
+  @keyframes flotar {
+    0%, 100% { transform: translateY(0) rotate(-8deg); }
+    50% { transform: translateY(-22px) rotate(8deg); }
+  }
+</style>
+</head>
+<body>
+
+<div class="utensilio u1">🔪</div>
+<div class="utensilio u2">🥄</div>
+<div class="utensilio u3">🔪</div>
+<div class="utensilio u4">🥄</div>
+<div class="utensilio u5">🔪</div>
+
+<header>
+  <h1>Del Pueblo a la Mesa</h1>
+  <p>Sazón de pueblo, cariño de casa, mirada de ciudad.</p>
+</header>
+
+<main>
+
+  <h2 class="seccion">Mi recetario</h2>
+
+  <div class="receta">
+    <h3>Cerdo agridulce</h3>
+    <h4>Procedimiento</h4>
+    <ol>
+      <li>Cortar y lavar el cerdo.</li>
+      <li>Preparar el empanizado y empanizar el cerdo.</li>
+      <li>Calentar el aceite a fuego bajo.</li>
+      <li>Freír el cerdo.</li>
+      <li>Escurrir el exceso de aceite.</li>
+      <li>Agregar la salsa agridulce.</li>
+    </ol>
+  </div>
+
+  <div class="receta">
+    <h3>Salsa bechamel</h3>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>Mantequilla: 45 g</li>
+      <li>Harina de trigo: 45 g</li>
+      <li>Leche: 750 ml</li>
+      <li>Nuez moscada, sal y pimienta</li>
+    </ul>
+  </div>
+
+  <div class="receta">
+    <h3>Encurtido de rábano</h3>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>Rábano: 4 manojos</li>
+      <li>Vinagre: 1 taza y media</li>
+      <li>Limón: 3 o 4</li>
+      <li>Agua, sal y pimienta al gusto</li>
+    </ul>
+    <h4>Procedimiento</h4>
+    <ol>
+      <li>Lavar el rábano y cortarlo en rodajas bien finas.</li>
+      <li>Agregar el vinagre, el limón y el agua.</li>
+      <li>Condimentar con sal y pimienta.</li>
+      <li>Dejar reposar un día completo.</li>
+    </ol>
+  </div>
+
+  <div class="receta">
+    <h3>Cebolla encurtida</h3>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>Cebolla morada: 4</li>
+      <li>Cilantro fino: 7 ramitas</li>
+      <li>Vinagre: 2 tazas</li>
+      <li>Limón: 6</li>
+      <li>Sazón completo, sal y pimienta al gusto</li>
+    </ul>
+    <h4>Procedimiento</h4>
+    <ol>
+      <li>Cortar la cebolla en rodajas.</li>
+      <li>Cortar el cilantro en brunoise.</li>
+      <li>Agregar los líquidos.</li>
+      <li>Dejar reposar un día completo.</li>
+    </ol>
+  </div>
+
+  <div class="receta">
+    <h3>Guacamole</h3>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>Aguacate: 4</li>
+      <li>Chile jalapeño: 1</li>
+      <li>Cebolla: 1</li>
+      <li>Tomate: 3</li>
+      <li>Limón: 2</li>
+      <li>Sal, pimienta y sazón completo al gusto</li>
+    </ul>
+    <h4>Procedimiento</h4>
+    <ol>
+      <li>Cortar los vegetales.</li>
+      <li>Ponerlos en un bowl.</li>
+      <li>Machacar con un vaso o licuar.</li>
+      <li>Condimentar.</li>
+      <li>Dejar reposar de 3 a 4 horas.</li>
+    </ol>
+  </div>
+
+  <div class="receta">
+    <h3>Sopa de gallina casera</h3>
+    <p class="nota">Una receta de mi mamá.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>Gallina entera, sin el cuello ni las patas</li>
+      <li>Chile verde, cebolla, cilantro fino y culantro ancho, en brunoise</li>
+      <li>Ajo cortado fino</li>
+      <li>Zanahoria, papa, yuca, repollo, elote, elotillo y pataste</li>
+      <li>Orégano ancho, consomé de pollo, sal, pimienta, sazón completo, paprika y albahaca</li>
+      <li>Ablandador para el pollo, aceite, margarina y agua</li>
+      <li>Arroz, que se prepara aparte</li>
+    </ul>
+    <h4>Procedimiento</h4>
+    <ol>
+      <li>En una olla, sofreír con un poquito de aceite la cebolla, el chile y el ajo.</li>
+      <li>Agregar el pollo cortado en piezas y sofreír.</li>
+      <li>Agregar los líquidos y condimentar.</li>
+      <li>Agregar el culantro fino y el ancho, y dejar hervir.</li>
+      <li>Cortar los vegetales en macedonia.</li>
+      <li>Agregar los vegetales del más duro al más blando: zanahoria, papa, elotillo y repollo.</li>
+      <li>Dejar hervir hasta que todo se cocine de manera uniforme.</li>
+      <li>Preparar el arroz aparte y servirlo con la sopa.</li>
+    </ol>
+  </div>
+
+  <h2 class="seccion">Recetas de la comunidad</h2>
+  <div class="comunidad">
+    <p>Muy pronto aquí podrás ver y compartir recetas de otras personas.</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>Del Pueblo a la Mesa. Hecho con cariño.</p>
+</footer>
+
+</body>
+  </html>
